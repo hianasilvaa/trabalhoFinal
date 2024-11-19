@@ -1,0 +1,38 @@
+<section class="container">
+    <section class="d-flex justify-contente-between mt-4">
+        <h2>Página iniciL do funcionário</h2>
+        <a href="/gerenciamento-plantao/create" class="btn btn-primary">Cadastrar novo plantão</a>
+    </section>
+</section>
+
+<hr>
+
+<section class="my-4">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Especialidade</th>
+                <th>Horario inicio</th>
+                <th>Horario fim</th>
+            </tr>
+        </thead>
+
+        <body> 
+            {{#each dados}}
+            <tr>
+                <td>{{dataValues.id}}</td>
+                <td>{{dataValues.nome}}</td>
+                <td>{{dataValues.data}}</td>
+                <td>{{dataValues.especialidade}}</td>
+                <td>{{horario inicio.dataValues.horario fim}}</td>
+                <td>
+                    <a href="" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        </body>
+
+    </table>
+</section>
